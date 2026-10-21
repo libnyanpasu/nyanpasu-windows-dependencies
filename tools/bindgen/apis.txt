@@ -1,0 +1,19 @@
+// Store install service.
+Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManager
+Windows.ApplicationModel.Store.Preview.InstallControl.IAppInstallManager::{IsStoreBlockedByPolicyAsync}
+Windows.ApplicationModel.Store.Preview.InstallControl.IAppInstallManager4::{GetFreeUserEntitlementAsync, GetFreeDeviceEntitlementAsync}
+Windows.ApplicationModel.Store.Preview.InstallControl.IAppInstallManager6::{StartProductInstallWithOptionsAsync}
+Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallOptions
+Windows.ApplicationModel.Store.Preview.InstallControl.IAppInstallItem::{ProductId, GetCurrentStatus, StatusChanged}
+Windows.ApplicationModel.Store.Preview.InstallControl.IAppInstallStatus::{InstallState, PercentComplete, ErrorCode}
+Windows.ApplicationModel.Store.Preview.InstallControl.IGetEntitlementResult::{Status}
+
+// Packages registered for the current user.
+Windows.Management.Deployment.PackageManager
+Windows.Management.Deployment.IPackageManager::{FindPackagesByUserSecurityIdPackageFamilyName}
+Windows.ApplicationModel.IPackage::{Id}
+Windows.ApplicationModel.IPackageId::{FullName, Version, Architecture}
+
+// Shells the selections above refer to.
+Windows.ApplicationModel.IPackageStatics::{}
+Windows.Foundation.TypedEventHandler

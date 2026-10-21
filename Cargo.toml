@@ -1,0 +1,22 @@
+[package]
+name = 'nyanpasu-windows-dependencies'
+version = '0.1.0'
+description = 'Detect Windows runtime dependencies and install missing ones through the Microsoft Store'
+edition = '2024'
+license = 'GPL-3.0'
+repository = 'https://github.com/libnyanpasu/nyanpasu-windows-dependencies.git'
+
+[target.'cfg(windows)'.dependencies]
+snafu = '0.8'
+strum = { version = '0.28', features = ['derive'] }
+tracing = '0.1'
+# The generated bindings name these crates directly.
+windows-collections = '0.100'
+windows-core = '0.100'
+windows-future = '0.100'
+windows-link = '0.100'
+windows-registry = '0.100'
+
+
+[workspace]
+members = ['tools/bindgen']
